@@ -1,94 +1,11 @@
-body{
-    box-sizing: border-box;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-:root{
-    --cor-primaaria: #000000;
-    --cor-a: #fff;
-}
-
-ul{
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-.header-bg{
-    background-color: var(--cor-primaaria);
-}
-.header{
-    max-width: 1160px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.header-menu{
-    flex-wrap: wrap;
-    display: flex;
-    gap: 40px;
-}
-.header-menu a{
-    padding: 16px 0;
-    display: inline-block;
-    padding: 16px 0px;
-    color: var(--cor-a);
-    font-size: 1.125rem;
-    position: relative;
-}
-.header-menu a:after{
-    content: '';
-     display: block;
-     height: 2px;
-     width: 0px;
-     background-color: var(--cor-a);
-     margin-top: 4px;
-     transition-duration: 0.4s;
-     position: absolute;
-}
-.header-menu a:hover:after{
-    width: 100%;
-  
-}
-
-@media (max-width: 800px){
-    .header-menu{
-        gap: 20px;
-    }
-    .header-menu a:hover{
-        background-color: #2e2e2e;
-    }
-    .header-menu a{
-        background-color: #111111;
-        border-radius: 5px;
-        padding: 12px 16px;
-
-    }
-    .header-menu a::after{
-        display: none;
-    }
-}
-
-
-@media (max-width: 600px){
-    .header-menu{
-        gap: 12px;
-    }
-    .header-menu a {
-        padding: 8px 12px;
-        font-size: 0.875rem;
-    }
-}
-@media (max-width: 300px){
-    .header-menu li{
-       width: 100%;
-     
-    }
-}
+@import "./global/header.css";
+@import "./global/global.css";
+@import "./ultilidades.css/cores.css";
+@import "./home/introducao.css";
+@import "./ultilidades.css/componentes.css";
+@import "./ultilidades.css/tipografia.css";
+@import "./bicicletas/bicicletas-lista.css"; 
+@import "./home/tecnologia.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
+@import "/css/seguros.css"; 
